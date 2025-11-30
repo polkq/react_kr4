@@ -1,0 +1,177 @@
+.technology-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.technology-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.technology-card:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+.technology-card.status-completed {
+  border-color: #4caf50;
+  background: linear-gradient(135deg, #1a1a1a 0%, #1a3a1a 100%);
+}
+
+.technology-card.status-completed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #4caf50;
+}
+
+.technology-card.status-in-progress {
+  border-color: #ff9800;
+  background: linear-gradient(135deg, #1a1a1a 0%, #3a2a1a 100%);
+}
+
+.technology-card.status-in-progress::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ff9800;
+}
+
+.technology-card.status-not-started {
+  border-color: #757575;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.technology-card.status-not-started::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #757575;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
+  flex: 1;
+  text-align: left;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-completed .status-badge {
+  background: #4caf50;
+  color: #fff;
+}
+
+.status-in-progress .status-badge {
+  background: #ff9800;
+  color: #fff;
+}
+
+.status-not-started .status-badge {
+  background: #757575;
+  color: #fff;
+}
+
+.card-description {
+  color: #aaa;
+  margin: 1rem 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.status-indicator {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.status-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.status-completed .status-icon {
+  color: #4caf50;
+}
+
+.status-in-progress .status-icon {
+  color: #ff9800;
+  animation: spin 2s linear infinite;
+}
+
+.status-not-started .status-icon {
+  color: #757575;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-hint {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.technology-card:hover .card-hint {
+  opacity: 1;
+}
+
+.status-not-started {
+  border-left-color: #ff6b6b;
+}
+
+.status-in-progress {
+  border-left-color: #4ecdc4;
+}
+
+.status-completed {
+  border-left-color: #45b7d1;
+}
+

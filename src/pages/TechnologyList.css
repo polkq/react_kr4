@@ -1,0 +1,62 @@
+.technology-list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.technology-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.technologies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.empty-state p {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .technologies-container {
+    grid-template-columns: 1fr;
+  }
+}

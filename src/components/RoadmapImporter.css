@@ -1,0 +1,129 @@
+.roadmap-importer {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.roadmap-importer h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.importer-description {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.import-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.import-button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #646cff;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #242424 0%, #2a1a3a 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.import-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3a2a4a 0%, #3a1a5a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(100, 108, 255, 0.3);
+}
+
+.import-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.import-button.secondary {
+  border-color: #ff9800;
+  background: linear-gradient(135deg, #242424 0%, #3a2a1a 100%);
+}
+
+.import-button.secondary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3a3a2a 0%, #4a3a2a 100%);
+}
+
+.error-message {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid #f44336;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #f44336;
+  margin-top: 1rem;
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid #4caf50;
+  color: #4caf50;
+}
+
+.status-message.error {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
+.available-technologies {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+}
+
+.available-technologies h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.tech-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tech-preview-item {
+  color: #aaa;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  background: #242424;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.tech-preview-item strong {
+  color: #646cff;
+}
+
+@media (max-width: 768px) {
+  .import-actions {
+    flex-direction: column;
+  }
+
+  .import-button {
+    width: 100%;
+  }
+}
+

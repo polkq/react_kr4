@@ -1,0 +1,89 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.technologies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #aaa;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.no-results p {
+  margin: 0;
+}
+
+.examples-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #333;
+}
+
+.examples-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #646cff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .technologies-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .app h1 {
+    font-size: 2rem;
+  }
+  
+  .app {
+    padding: 1rem;
+  }
+
+  .examples-title {
+    font-size: 1.5rem;
+  }
+}
+

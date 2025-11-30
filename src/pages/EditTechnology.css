@@ -1,0 +1,48 @@
+.edit-technology-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-state {
+  text-align: center;
+  padding: 3rem;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+}
+
+.error-state h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #242424 0%, #2a1a3a 100%);
+  border-color: #646cff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3a2a4a 0%, #3a1a5a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(100, 108, 255, 0.3);
+}
+

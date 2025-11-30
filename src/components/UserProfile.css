@@ -1,0 +1,83 @@
+.user-profile {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-profile h2 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-info p {
+  margin: 0;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.user-info strong {
+  color: #646cff;
+  font-weight: 600;
+}
+
+.user-profile.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.user-profile.loading p {
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.spinner {
+  border: 3px solid #333;
+  border-top: 3px solid #646cff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.user-profile.error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.user-profile.error p {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.user-profile.error button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ff6b6b;
+  border-radius: 8px;
+  background: #242424;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.user-profile.error button:hover {
+  background: #ff6b6b;
+  color: #fff;
+}
+

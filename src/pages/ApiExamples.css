@@ -1,0 +1,60 @@
+.api-examples-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.examples-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.example-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.example-card h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+  color: #646cff;
+}
+
+.example-description {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .example-card {
+    padding: 1.5rem;
+  }
+}
+
